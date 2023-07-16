@@ -1,0 +1,1380 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>apiwise</name>
+    </assembly>
+    <members>
+        <member name="M:apiwise.Controllers.ContratosController.GetResultContratoCliente(System.String)">
+            <summary>
+            </summary>= "0101804086001"
+            <param name="codigo">identificacion del cliente DNI</param>
+            <returns></returns>
+        </member>
+        <member name="T:apiwise.Controllers.LoginController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:apiwise.Controllers.LoginController.#ctor(Microsoft.Extensions.Options.IOptions{apiwise.Helps.AppSettings},apiwise.Interface.IUserService,AutoMapper.IMapper,apiwise.Interface.ILoggerWise,apiwise.Interface.IProcedureSql)">
+            <summary>
+            
+            </summary>
+            <param name="appSetting"></param>
+            <param name="userService"></param>
+            <param name="mapper"></param>
+            <param name="logger"></param>
+            <param name="procedureMysql"></param>
+        </member>
+        <member name="M:apiwise.Controllers.LoginController.AuthenticateUser(apiwise.Models.Login.Login)">
+            <summary>
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiwise.Controllers.PagosController.PostPaymentsEasyAsync(apiwise.Models.Pagos.PagosDto.Payment)">
+            <summary>
+            Registrar pagos clientes
+            </summary>
+            <param name="pay">Json para ejecutar el pago</param>
+            <returns></returns>
+        </member>
+        <member name="M:apiwise.Controllers.PagosController.ResquestPay(System.Boolean,System.String,System.Object)">
+            <summary>
+            </summary>
+            <param name="Success"></param>
+            <param name="Msj"></param>
+            <param name="ObjResult"></param>
+            <returns></returns>
+        </member>
+        <member name="T:apiwise.Controllers.ProductosController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:apiwise.Controllers.ProductosController.#ctor(apiwise.Data.DataContext,AutoMapper.IMapper,apiwise.Interface.ILoggerWise)">
+            <summary>
+            </summary>
+            <param name="dataContext"></param>
+            <param name="mapper"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:apiwise.Controllers.ProductosController.GetProductoAsync(apiwise.Models.CProducto.FromBodyItems)">
+            <summary>
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiwise.Controllers.ProductosController.GetProducto(apiwise.Models.CProducto.FromBodyItems)">
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:apiwise.Controllers.SeriesLotesProductController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:apiwise.Controllers.SeriesLotesProductController.#ctor(apiwise.Data.DataContext,AutoMapper.IMapper,apiwise.Interface.ILoggerWise,apiwise.Data.DataContextProcedures)">
+            <summary>
+            </summary>
+            <param name="dataContext"></param>
+            <param name="mapper"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:apiwise.Controllers.SeriesLotesProductController.GetResultSerie(System.String)">
+            <summary>
+            </summary>
+            <param name="IdDocs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiwise.Controllers.SeriesLotesProductController.GetResultSerieItems(System.String)">
+            <summary>
+            </summary>
+            <param name="IdDocs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiwise.Controllers.SeriesLotesProductController.PosResultSerie(System.Collections.Generic.List{apiwise.Models.Series.Seriesproducto})">
+            <summary>
+            </summary>
+            <param name="seriesproductos"></param>
+            <returns></returns>
+        </member>
+        <member name="T:apiwise.Controllers.SlctdreposicionitemController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:apiwise.Controllers.SlctdreposicionitemController.#ctor(apiwise.Data.DataContext,AutoMapper.IMapper,apiwise.Interface.ILoggerWise,apiwise.Data.DataContextProcedures)">
+            <summary>
+            </summary>
+            <param name="dataContext"></param>
+            <param name="mapper"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:apiwise.Controllers.SlctdreposicionitemController.GetResult(apiwise.Helps.SlcRItemFromBodyRequest)">
+            <summary>
+            </summary>
+            <param name="BodyRequest">{ "iddoc" : "220518161658412", "rucorigen" : "0103677456001", "rucproveedor" : "0190170322001" } </param>
+            <returns></returns>
+        </member>
+        <member name="M:apiwise.Controllers.SlctdreposicionitemController.Post(Models.Slctdreposicionitem)">
+            <summary>
+            </summary>
+            <param name="slctdreposicionitem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiwise.Controllers.SlctdreposicionitemController.RetornoPut(Models.Slctdreposicionitem)">
+            <summary>
+            </summary>
+            <param name="slctdreposicionitem"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiwise.Controllers.SlctdreposicionitemController.GetResultSlct(apiwise.Helps.SlcRItemFromBodyRequest)">
+            <summary>
+            </summary>
+            <param name="BodyRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:apiwise.Controllers.TestConeccionController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:apiwise.Controllers.TestConeccionController.#ctor(apiwise.Data.DataContext,apiwise.Interface.ILoggerWise)">
+            <summary>
+            </summary>
+            <param name="dataContext"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:apiwise.Controllers.TestConeccionController.Test_ConeccionAsync">
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:apiwise.Data.DataContext">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:apiwise.Data.DataContext.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:apiwise.Data.DataContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{apiwise.Data.DataContext})">
+            <summary>
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Accionesperfilesslctreposicionitems">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Accionesperfilesslctreposicionitemfranquicia">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Docspendientes">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Empleados">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Empresas">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Empresasusuarios">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Pagoscabeceras">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Pagoscheques">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Pagoschequedetalles">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Pagosdetalles">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Pagosdetalleintereses">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Pagosmanejoscajas">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Parametrosapis">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Perfiles">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Slctdreposicionitems">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Slctdreposicionitemdetalles">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Stockproductsecommerces">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Seriesproductos">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Sucursales">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Tiposempleados">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Usuarios">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Usuarioapiwises">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Usuariossucursals">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Cliempresaapis">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Titulos">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Productos">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Empresasproductos">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Data.DataContext.Lineas">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:apiwise.Data.DataContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="T:apiwise.Enum.ProductosEnum">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.ProductosEnum.activo">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.ProductosEnum.inactivo">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Enum.TypeEnum">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TypeEnum.Infor">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TypeEnum.Error">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TypeEnum.Warng">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Enum.TipoDocPendientes">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TipoDocPendientes.REPOSICION_ITEM_PR">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TipoDocPendientes.REPOSICION_ITEM_PR_ORP">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TipoDocPendientes.REPOSICION_ITEM_FF">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TipoDocPendientes.REPOSICION_ITEM_RECHAZADA">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TipoDocPendientes.ORDEN_PARCIAL">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Enum.TipoEstadoFranquicia">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TipoEstadoFranquicia.FRAN_INGRESO">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TipoEstadoFranquicia.FRAN_RECIBE_PROV">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TipoEstadoFranquicia.FRAN_PROCESADA">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TipoEstadoFranquicia.FRAN_DESPACHADA">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TipoEstadoFranquicia.FRAN_ENTREGADA">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:apiwise.Enum.TipoEstadoFranquicia.FRAN_RECHAZADA">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Helps.ServerRespuesta.Success">
+            <summary>
+            true, false estado de ejecucion
+            </summary>
+        </member>
+        <member name="P:apiwise.Helps.ServerRespuesta.Message">
+            <summary>
+            mensaje del estado del proceso
+            </summary>
+        </member>
+        <member name="P:apiwise.Helps.ServerRespuesta.ResponsesObject">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:apiwise.Helps.SlcRItemFromBodyRequest">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Helps.SlcRItemFromBodyRequest.Iddoc">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Helps.SlcRItemFromBodyRequest.Rucorigen">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Helps.SlcRItemFromBodyRequest.Rucproveedor">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Mapper.AutomapperProfiles">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.CProducto.FromBodyItems">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.CProducto.FromBodyItems.rucempresa">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.CProducto.FromBodyItems.iditem">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.CProducto.FromBodyItems.data">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.CProducto.FromBodyItems.descripcion">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.CProducto.GetItems">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.CProducto.GetProductosResponseDto">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.CProducto.Items.Categorizacion.Categoria">
+            <summary>
+            Categoria;NombreCategoria,AbreviadoC
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.CProducto.Items.Categorizacion.Grupo">
+            <summary>
+            Grupo;NombreGrupo,AbreviadoGrupo
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.CProducto.Items.Categorizacion.Marca">
+            <summary>
+            Marca;NombreMarca,AbreviadoMarca
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.CProducto.Items.EmpresasItemsDto">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.CProducto.ProductosProfile">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:apiwise.Models.CProducto.ProductosProfile.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.CProducto.ResponseItemFranquicias">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.CProducto.ResponseItemFranquicias.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.Empresasproducto">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.Pagos.PagosDto.Payment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Pagos.PagosDto.Payment.NumRecibo">
+            <summary>
+            Numero del documento
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Pagos.PagosDto.Payment.IdFactura">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Pagos.PagosDto.Payment.IdUsuario">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Pagos.PagosDto.Payment.FormaPago">
+            <summary>
+            EFE para Efectivo, TRA para Transferencia,CHE para Cheque
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Pagos.PagosDto.Payment.ValorTotal">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Pagos.PagosDto.Payment.Observacion">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.Pagos.PagosDto.PaymentDetail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Pagos.PagosDto.PaymentDetail.Propietario">
+            <summary>
+            Nombre de propietatio del documento de CHEQUE/TRANSFERENCIA
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Pagos.PagosDto.PaymentDetail.IdBanco">
+            <summary>
+            Codigo del banco si es CHEQUE/TRANSFERENCIA
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Pagos.PagosDto.PaymentDetail.NumCuenta">
+            <summary>
+            Numero de cuenta del Propietario CHEQUE/TRANSFERENCIA
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Pagos.PagosDto.PaymentDetail.NumCheque">
+            <summary>
+            Numero de CHEQUE
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Pagos.PagosDto.PaymentDetail.Fechadoc">
+            <summary>
+            Fecha del documento CHEQUE en formato Anio-Mes-Dia 2022-04-25
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.Producto">
+            <summary>
+            Producto;DescripcionProducto,Abrevia
+            </summary>
+        </member>
+        <member name="M:apiwise.Models.Producto.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.CodigoProducto">
+            <summary>
+            Codigo;text;true;false;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.CodigoVentaProducto">
+            <summary>
+            Codigo de Item;text;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.CodigoCompraProducto">
+            <summary>
+            Codigo en Compra;text;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.CodigoBarraProducto">
+            <summary>
+            Codigo de Barras;text;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.CodigoCatalogoProducto">
+            <summary>
+            Codigo en Catalogo;text;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.DescripcionProducto">
+            <summary>
+            Nombre-Descripcion;text;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.DescripcionAdicionalProducto">
+            <summary>
+            Descripcion Adicional;text;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.DescripcionCortaProducto">
+            <summary>
+            Descripcion Corta;text;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.ServicioProducto">
+            <summary>
+            Establecer como Servicio;chk;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.PagaIvaProducto">
+            <summary>
+            Item con I.V.A.;chk;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.RecetaProducto">
+            <summary>
+            Item posee Receta?;chk;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.VentaProducto">
+            <summary>
+            Es un Item para Venta;chk;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.ActivoProducto">
+            <summary>
+            Es parte del Activo;chk;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.SerieLoteProducto">
+            <summary>
+            Requiere Ingresar Numeros de Serie;chk;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.PesoProducto">
+            <summary>
+            Peso;text;true;true;Otras Consideraciones;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.AltoProducto">
+            <summary>
+            Alto;text;true;true;Otras Consideraciones;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.AnchoProducto">
+            <summary>
+            Ancho;text;true;true;Otras Consideraciones;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.ProfundidadProducto">
+            <summary>
+            Ancho;text;true;true;Otras Consideraciones;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.MateriaPrimaProducto">
+            <summary>
+            Item de Materia Prima;chk;true;true;Otras Consideraciones;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.ControlarPesoProducto">
+            <summary>
+            Se debe controlar su Peso;chk;true;true;Otras Consideraciones;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.RepuestoProducto">
+            <summary>
+            Es un Repuesto;chk;true;true;Otras Consideraciones;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.SustitutoProducto">
+            <summary>
+            Es un Sustituto de otro Item;text;true;true;Otras Consideraciones;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.AccesorioProducto">
+            <summary>
+            Es un Accesorio;chk;true;true;Otras Consideraciones;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.PerchaProducto">
+            <summary>
+            Percha en Bodega;text;true;true;Otras Consideraciones;180;left
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.CultivoProucto">
+            <summary>
+            Permite saber si el producto se aplica a algun tipo de cultivo en caso de ser agroquimio
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.ControlesProducto">
+            <summary>
+            Almacena el tipo de control en el caso de ser agroquimico
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.DosisProducto">
+            <summary>
+            Almacena la dosis del producto en el caso de ser agroquimico
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.FrecuenciasProducto">
+            <summary>
+            Almacena la frecuencia de administracion del produto en caso de ser agroquimico
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.ComboProducto">
+            <summary>
+            Verifica si el producto es un combo
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.DescuentoComboProducto">
+            <summary>
+            Establece el porcentaje de descuento en los productos del combo
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.FacturaComboProducto">
+            <summary>
+            Verifica si se factura el combo o cada uno de los productos
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.Producto.ObservacionProducto">
+            <summary>
+            Observaciones;text;true;true;Observaciones;180;left
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.ResultSlctItems">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.ResultSlctItems.IdDocs">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.ResultSlctItems.Observacion">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.ResultSlctItems.Fecha">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.Series.ResultSeriesProductos">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.Series.Seriesproducto">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Models.Accionesperfilesslctreposicionitem">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Accionesperfilesslctreposicionitem.Idempresa">
+            <summary>
+            Empresa a la que pertenece la sucursal;combo;true;true;Datos;180;left;Select CodigoEmpresa,NombreEmpresa from Empresas
+            </summary>
+        </member>
+        <member name="P:Models.Accionesperfilesslctreposicionitem.Idperfilatiende">
+            <summary>
+            Seleccione el perfil ;combo;true;true;Datos;180;left;SELECT perfiles.CodigoPerfil, perfiles.NombrePerfil FROM perfiles ORDER BY NombrePerfil
+            </summary>
+        </member>
+        <member name="P:Models.Accionesperfilesslctreposicionitem.Idcliempresa">
+            <summary>
+            Seleccione la Franquicia ;combo;true;true;Datos;180;left;SELECT cliempresaapi.id, cliempresaapi.nombre FROM cliempresaapi ORDER BY nombre
+            </summary>
+        </member>
+        <member name="P:Models.Accionesperfilesslctreposicionitem.Idperfilfactura">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Accionesperfilesslctreposicionitem.Idtiposlct">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Accionesperfilesslctreposicionitemfranquicium.Idempresa">
+            <summary>
+            Empresa a la que pertenece la sucursal;combo;true;true;Datos;180;left;Select CodigoEmpresa,NombreEmpresa from Empresas
+            </summary>
+        </member>
+        <member name="P:Models.Accionesperfilesslctreposicionitemfranquicium.Idperfilatiende">
+            <summary>
+            Seleccione el perfil ;combo;true;true;Datos;180;left;SELECT perfiles.CodigoPerfil, perfiles.NombrePerfil FROM perfiles ORDER BY NombrePerfil
+            </summary>
+        </member>
+        <member name="P:Models.Accionesperfilesslctreposicionitemfranquicium.Idtiposlct">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Models.Empleado">
+            <summary>
+            Empleado;NombreEmpleado,ApellidoEmpleado
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.CodigoEmpleado">
+            <summary>
+            Codigo;text;true;false;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.NombreEmpleado">
+            <summary>
+            Nombres;text;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.ApellidoEmpleado">
+            <summary>
+            Apellidos;text;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.EmailEmpleado">
+            <summary>
+            Email Oficina;text;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.TiposEmpleadosEmpleado">
+            <summary>
+            Cargo de Empleado;cmb;true;true;Administracion;180;left;select CodigoTipoEmpleado, NombreTipoEmpleado from tiposempleados
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.PerfilesEmpleado">
+            <summary>
+            Perfil de Usuario;cmb;true;true;Administracion;180;left;select CodigoPerfil, NombrePerfil from perfiles
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.NombreUsuarioEmpleado">
+            <summary>
+            Nombre de Usuario;text;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.ClaveUsuarioEmpleado">
+            <summary>
+            Clave Personal;txt;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.CambiarPrimeraVezEmpleado">
+            <summary>
+            1 Cambiar 0 No Cambiar
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.ClaveCaducaEmpleado">
+            <summary>
+            0 No Caduca 1 Si Caduca
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.UsuarioCaducaEmpleado">
+            <summary>
+            0 No Caduca 1 Caduca
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.SeleccionaEmpresaEmpleado">
+            <summary>
+            Debe Elegir Empresa?;chk;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.SeleccionaSucursalEmpleado">
+            <summary>
+            Debe elegir Sucursal?;chk;true;true;Administracion;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.SucursalesEmpleado">
+            <summary>
+            Sucursal de Pertenencia;cmb;true;true;Administracion;180;left;select CodigoSucursal, NombreSucursal from sucursales
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.CedulaEmpleado">
+            <summary>
+            Número de Cédula;text;true;true;Datos Personales;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.TitulosEmpleado">
+            <summary>
+            Titulo - Profesion;cmb;true;true;Administracion;180;left;select CodigoTitulo, NombreTitulo from titulos
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.DireccionUnoEmpleado">
+            <summary>
+            Domicilio;text;true;true;Datos Personales;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.DireccionDosEmpleado">
+            <summary>
+            Direccion Adicional;text;true;true;Datos Personales;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.TelefonoUnoEmpleado">
+            <summary>
+            Teléfono;text;true;true;Datos Personales;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.TelefonoDosEmpleado">
+            <summary>
+            Teléfono Adicional;text;true;true;Datos Personales;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.TelefonoTresEmpleado">
+            <summary>
+            Celular;text;true;true;Datos Personales;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.EmailEmpleadoPersonal">
+            <summary>
+            Email Personal;text;true;true;Datos Personales;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.FechaNacimientoEmpleado">
+            <summary>
+            Fecha de Nacimiento;cal;true;true;Datos Personales;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.CargaFamiliarEmpleado">
+            <summary>
+            Numero de Cargas Familiares;text;true;true;Datos Personales;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.CuentasContabilidadEmpleado">
+            <summary>
+            Cuenta Contable Asignada;cmd;true;true;Contabilidad;180;left;Select CodigoCuentaContable, NombreCuentaContable from cuentascontabilidad
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.SueldoNominalEmpleado">
+            <summary>
+            Sueldo Nominal;text;true;true;Contabilidad;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.HoraIngresoEmpleado">
+            <summary>
+            Almacena la hora de ingreso en la mañana
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.HoraSalidaEmpleado">
+            <summary>
+            Almacena la hora de la salida en la tarde
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.TiempoAlmuerzoEmpleado">
+            <summary>
+            Almacena el numero de minutos de tiempo de almuerzo del empleado
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.CostaEmpleado">
+            <summary>
+            Determina si un empleado trabaja en la costa
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.FondosReservaEmpleado">
+            <summary>
+            Determina si a un empleado se le entrega directamente los fondo de reserva
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.CambiadoClaveEmpleado">
+            <summary>
+            0 No ha cambiado 1 Cambio clave
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.EntregarDecimoEmpleado">
+            <summary>
+            indica si el empleado quiere recibir el decimo en el salario mensual. 1 mensual, 0 no mensual.
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.TrabajaTiempoParcialEmpleado">
+            <summary>
+            indica si el empleado trabaja a tiempo parcial, 1 parcial, 0 completo
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.PresupuestarEmpleado">
+            <summary>
+            indica si al empleado se le debe crear un presupuesto de ventas.
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.RepresentanteLegalEmpleado">
+            <summary>
+            indica si el empleado es el representante legal de la empresa
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.CuentaBancariaEmpleado">
+            <summary>
+            numero de cta bancaria del empleado
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.TipoCuentaBancariaEmpleado">
+            <summary>
+            indica el tipo de cta bancaria del empleado
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.DuracionContratoEmpleado">
+            <summary>
+            numero de meses que dura el contrato del empleado con la empresa
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.NoCalculaBeneficiosEmpleado">
+            <summary>
+            indica si el empleado calculo beneficios sociales
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.DiasLaboraTiempoParcialEmpleado">
+            <summary>
+            indica los dias que el empleado labora si trabaja a tiempo parcial.
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.SustitutoEmpleado">
+            <summary>
+            indii el empleado es empleado sustituto de un miembro de la familia discapacitado
+            </summary>
+        </member>
+        <member name="P:Models.Empleado.PermiteAgendamientoEmpleados">
+            <summary>
+            Parámetro que sirve para filtrar los empleados en el módulo de agendamiento
+            </summary>
+        </member>
+        <member name="T:Models.Empresa">
+            <summary>
+            Empresa;NombreEmpresa
+            </summary>
+        </member>
+        <member name="M:Models.Empresa.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Empresa.CodigoEmpresa">
+            <summary>
+            Codigo de Empresa;text;true;false;Datos;120;left
+            </summary>
+        </member>
+        <member name="P:Models.Empresa.RucEmpresa">
+            <summary>
+            Ruc Empresa;text;true;true;Datos;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Empresa.NombreEmpresa">
+            <summary>
+            Nombre Empresa;text;true;True;Datos;200;left
+            </summary>
+        </member>
+        <member name="P:Models.Empresa.NombreComercialEmpresa">
+            <summary>
+            Nombre Comercial Empresa;text;true;True;Datos;200;left
+            </summary>
+        </member>
+        <member name="P:Models.Empresa.CodigoDinardapEmpresa">
+            <summary>
+            Codigo DINARDAP Empresa;text;true;True;Datos;200;left
+            </summary>
+        </member>
+        <member name="P:Models.Empresa.LogoEmpresa">
+            <summary>
+            Logotipo Empresa;text;true;True;Datos;200;left
+            </summary>
+        </member>
+        <member name="P:Models.Empresa.OrdenIncialEmpresa">
+            <summary>
+            Orden a presentar empresa;text;true;True;Datos;200;left
+            </summary>
+        </member>
+        <member name="P:Models.Empresa.VisualizarNombreComercialEmpresa">
+            <summary>
+            Si está en 0 se visualiza la razón social de la empresa
+            </summary>
+        </member>
+        <member name="P:Models.Pagoscabecera.FormaPagoPagoCabecera">
+            <summary>
+            EFE Efectivo CHE Cheque DEP Deposito CRU Cruce Factura TAR Tarjeta ANT Anticipos
+            </summary>
+        </member>
+        <member name="P:Models.Pagoscabecera.TipoPagoCabecera">
+            <summary>
+            V Ventas C Compras/Gastos
+            </summary>
+        </member>
+        <member name="P:Models.Pagoscheque.FormaPagoPagoCabecera">
+            <summary>
+            EFE Efectivo CHE Cheque DEP Deposito CRU Cruce Factura TAR Tarjeta
+            </summary>
+        </member>
+        <member name="P:Models.Pagoscheque.EstadoDocumentoPagoDetalle">
+            <summary>
+            CAJ Caja DEP Depositado DEV Devuelto POS Posfechado
+            </summary>
+        </member>
+        <member name="P:Models.Pagoschequedetalle.EstadoDocumentoPagoDetalle">
+            <summary>
+            CAJ Caja DEP Depositado DEV Devuelto POS Posfechado
+            </summary>
+        </member>
+        <member name="P:Models.Pagosdetalle.FormaPagoPagoCabecera">
+            <summary>
+            EFE Efectivo CHE Cheque DEP Deposito CRU Cruce Factura TAR Tarjeta
+            </summary>
+        </member>
+        <member name="P:Models.Pagosdetalle.EstadoDocumentoPagoDetalle">
+            <summary>
+            CAJ Caja DEP Depositado DEV Devuelto POS Posfechado A Anulado
+            </summary>
+        </member>
+        <member name="P:Models.Perfile.CodigoPerfil">
+            <summary>
+            Codigo de Perfil;text;true;false;Datos;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Perfile.NombrePerfil">
+            <summary>
+            Nombre de Perfil;text;true;true;Datos;180;left
+            </summary>
+        </member>
+        <member name="T:Models.Slctdreposicionitem">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Models.Slctdreposicionitem.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Idempresa">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Idtiposlct">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Rucproveedor">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Rucorigenf">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Numero">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Fecha">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Numitems">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Mailenviado">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Numfacturaguiap">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Observaciof">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Observacionp">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Usuariosolicitaf">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Fechasolicitaf">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Fecharecibep">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Usuarioprocesap">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Fechaprocesadap">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Usuariodespachap">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Fechadespachap">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Usuariorecibef">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Fecharecibef">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Usuariorechazadap">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Fecharechazadap">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Estado">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Reenviardocs">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Enviadoseriesp">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Enviadolotesp">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Iddocsproveedor">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Descuentototal">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Descuentototal0">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Subtotal">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Subtotal0">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Iva">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Documento">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Iddocsorigen">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitem.Slctdreposicionitemdetalle">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Models.Slctdreposicionitemdetalle">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle._Idcabecera">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle._Iditem">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle._Idservicioapi">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle.Iditemproveedor">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle.Descripcion">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle.Cantidad">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle.Cantdespachada">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle.Cantrequerido">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle.Costo">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle.Iva">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle.Precioproveedor">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle.Descuento">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle.Solicitadop">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Models.Slctdreposicionitemdetalle.SlctdreposicionitemNavigation">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Models.Sucursale">
+            <summary>
+            Sucursal;NombreSucursal
+            </summary>
+        </member>
+        <member name="P:Models.Sucursale.CodigoSucursal">
+            <summary>
+            Codigo WISE de la sucursal;text;true;false;Datos;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Sucursale.EmpresasSucursal">
+            <summary>
+            Empresa a la que pertenece la sucursal;combo;true;true;Datos;180;left;Select CodigoEmpresa,NombreEmpresa from Empresas
+            </summary>
+        </member>
+        <member name="P:Models.Sucursale.NombreSucursal">
+            <summary>
+            Nombre Sucursal;text;true;true;Datos;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Sucursale.DireccionSucursal">
+            <summary>
+            Direccion Sucursal;text;true;true;Datos;300;left
+            </summary>
+        </member>
+        <member name="P:Models.Sucursale.TelefonoUnoSucursal">
+            <summary>
+            Telefono Uno Sucursal;text;true;true;Datos;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Sucursale.TelefonoDosSucursal">
+            <summary>
+            Telefono Dos Sucursal;text;true;true;Datos;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Sucursale.FaxSucursal">
+            <summary>
+            Fax Sucursal;text;true;true;Datos;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Sucursale.ActivaSucursal">
+            <summary>
+            Desactivada Sucursal;checkbox;true;true;Datos;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Sucursale.CiudadesSucursal">
+            <summary>
+            Ciudad a la que pertenece la sucursal;combo;true;true;Datos;180;left;Select CodigoCiudad,NombreCiudad from ciudades ORDER BY NombreCiudad
+            </summary>
+        </member>
+        <member name="P:Models.Sucursale.SecuenciaSucursal">
+            <summary>
+            Codigo secuencial para identificacion
+            </summary>
+        </member>
+        <member name="T:Models.Tiposempleado">
+            <summary>
+            TipoEmpleado;NombreTipoEmpleado
+            </summary>
+        </member>
+        <member name="P:Models.Tiposempleado.CodigoTipoEmpleado">
+            <summary>
+            Codigo Tipo Empleado;text;true;false;Datos;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Tiposempleado.NombreTipoEmpleado">
+            <summary>
+            Nombre Tipo Empleado;text;true;true;Datos;180;left
+            </summary>
+        </member>
+        <member name="P:Models.Tiposempleado.EsVendedorTipoEmpleado">
+            <summary>
+            Visualiza en listado de vendedores;checkbox;true;true;Datos;180;left
+            </summary>
+        </member>
+        <member name="T:Models.Titulo">
+            <summary>
+            Titulo;NombreTitulo
+            </summary>
+        </member>
+        <member name="P:Models.Titulo.CodigoTitulo">
+            <summary>
+            Codigo Titulo;text;true;false;datos;120;left
+            </summary>
+        </member>
+        <member name="P:Models.Titulo.NombreTitulo">
+            <summary>
+            Nombre Titulo;text;true;true;datos;200;left
+            </summary>
+        </member>
+    </members>
+</doc>

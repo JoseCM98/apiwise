@@ -1,6 +1,6 @@
 ﻿namespace apiwise.Logs.Info
 {
-    public class Info
-    {
-    }
+    //public class Info
+    //{
+    //}
 }

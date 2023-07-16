@@ -1,6 +1,6 @@
 ﻿namespace apiwise.Logs.Error
 {
-    public class Error
-    {
-    }
+    //public class Error
+    //{
+    //}
 }

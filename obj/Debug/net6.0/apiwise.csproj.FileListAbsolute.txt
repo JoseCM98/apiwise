@@ -73,7 +73,6 @@ C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\MySqlConnector.dll
 C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
 C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
@@ -84,6 +83,5 @@ C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.Op
 C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\System.IO.Packaging.dll
 C:\inetpub\wwwroot\apiwise\bin\Debug\net6.0\apiwise.xml
 C:\inetpub\wwwroot\apiwise\obj\Debug\net6.0\apiwise.xml
