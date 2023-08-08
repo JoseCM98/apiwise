@@ -19,7 +19,11 @@ namespace apiwise.Data
         public virtual DbSet<ResultPay> ResultPays { get; set; } = null!;
         public virtual DbSet<ResultSlctItems> ResultSlctItems { get; set; } = null!;
         public virtual DbSet<ResultSeriesProductos> ResultSeriesProductos { get; set; } = null!;
+        public virtual DbSet<Itemsfvfranquiciadosamatriz> Itemsfvfranquiciadosamatrizs { get; set; } = null!;
 
+        /// <summary>
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<SaldoContratoClienteWeb>(entity =>
@@ -88,7 +92,6 @@ namespace apiwise.Data
                 entity.Property(e => e.Observacion);
                 entity.Property(e => e.Fecha);
             });
-
             modelBuilder.Entity<ResultSeriesProductos>(entity =>
             {
                 entity.HasNoKey();
@@ -102,6 +105,22 @@ namespace apiwise.Data
                 entity.Property(e => e.DocumentosSerieProducto);
                 entity.Property(e => e.Fecharegistro);
                 entity.Property(e => e.UsuariosSerieProducto);
+            });
+
+            modelBuilder.Entity<Itemsfvfranquiciadosamatriz>(entity =>
+            {
+                entity.HasNoKey();
+                entity.Property(e => e.Iddetalle);
+                entity.Property(e => e.Identificacion);
+                entity.Property(e => e.Empresa);
+                entity.Property(e => e.Bodega);
+                entity.Property(e => e.Iditem);
+                entity.Property(e => e.Idmultiempresas);
+                entity.Property(e => e.Descripcion);
+                entity.Property(e => e.Cantidad);
+                entity.Property(e => e.Precio);
+                entity.Property(e => e.Fechafv);
+                entity.Property(e => e.Estado);
             });
         }
     }

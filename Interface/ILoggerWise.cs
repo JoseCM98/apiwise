@@ -5,5 +5,6 @@
         public void LogInformation(string mensaje);
         public void LogError(string mensaje);
         public void LogWarning(string mensaje);
+        public void LogHosted(string mensaje);
     }
 }

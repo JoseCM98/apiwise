@@ -133,7 +133,7 @@ namespace apiwise.Controllers
                          .Include(g => g.GruposProductoNavigation)
                          .Include(m => m.MarcasProductoNavigation)
                          .Include(t => t.TiposProductoNavigation)
-                         .ToListAsync();
+                         .Skip(2).ToListAsync();
                     }
                     if (producto.Count > 0)
                     {

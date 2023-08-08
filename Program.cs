@@ -1,5 +1,6 @@
 using apiwise.Data;
 using apiwise.Helps;
+using apiwise.HostedService;
 using apiwise.Interface;
 using apiwise.Mapper;
 using apiwise.Service;
@@ -81,9 +82,6 @@ builder.Services.AddScoped<IUserService, ServicesUsuario>();
 builder.Services.AddScoped<IProcedureSql, ServiceProcedureSql>();
 builder.Services.AddScoped<ILoggerWise, ServicioLogger>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
-//builder.Services.AddScoped<IHostedService,MyHostedService>();
-//builder.Services.AddHostedService<MyHostedService>();
 builder.Services.AddSingleton<IUriService>(o =>
 {
     var accessor = o.GetRequiredService<IHttpContextAccessor>();
@@ -91,8 +89,7 @@ builder.Services.AddSingleton<IUriService>(o =>
     var uri = string.Concat(request.Scheme, "://", request.Host.ToUriComponent());
     return new UriService(uri);
 });
-
-
+builder.Services.AddTransient<Microsoft.Extensions.Hosting.IHostedService, MyHostedService>();
 var app = builder.Build();
 if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
@@ -119,7 +116,6 @@ if (app.Environment.IsProduction() || app.Environment.IsStaging())
 {
     app.UseExceptionHandler("/Error/index.html");
 }
-
 app.UseCors(MyCors);
 app.UseAuthorization();
 app.MapControllers();

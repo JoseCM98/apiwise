@@ -8,7 +8,6 @@ C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\apiwise.pdb
 C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\apiwise.xml
 C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\AutoMapper.dll
 C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\DocumentFormat.OpenXml.dll
 C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\Google.Protobuf.dll
 C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\K4os.Compression.LZ4.dll
 C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\K4os.Compression.LZ4.Streams.dll
@@ -47,7 +46,6 @@ C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\Swashbuckle.AspNetCore.SwaggerUI.d
 C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\System.Configuration.ConfigurationManager.dll
 C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\System.Drawing.Common.dll
 C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\System.IdentityModel.Tokens.Jwt.dll
-C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\System.IO.Packaging.dll
 C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\System.IO.Pipelines.dll
 C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\inetpub\wwwroot\apiwise\bin\Release\net6.0\System.Security.Permissions.dll

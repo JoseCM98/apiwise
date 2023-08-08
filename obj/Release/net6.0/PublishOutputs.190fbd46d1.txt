@@ -7,7 +7,6 @@ C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\apiwise.runtimeconfig.j
 C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\apiwise.pdb
 C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\AutoMapper.dll
 C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\DocumentFormat.OpenXml.dll
 C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\Google.Protobuf.dll
 C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\K4os.Compression.LZ4.dll
 C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\K4os.Compression.LZ4.Streams.dll
@@ -46,7 +45,6 @@ C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.
 C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\System.Configuration.ConfigurationManager.dll
 C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\System.Drawing.Common.dll
 C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
-C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\System.IO.Packaging.dll
 C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\System.IO.Pipelines.dll
 C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
 C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\PubTmp\Out\System.Security.Permissions.dll

@@ -20,6 +20,10 @@ namespace apiwise.Service
         {
             EscribirText(mensaje, TypeEnum.Warng.ToString(), "Logs\\Info");
         }
+        public void LogHosted(string mensaje)
+        {
+            EscribirText(mensaje, TypeEnum.Warng.ToString(), "Logs\\Hosted");
+        }
         public void EscribirText(string msn, string tipo, string carpeta)
         {
             try
@@ -58,5 +62,7 @@ namespace apiwise.Service
                 log.Close();
             }
         }
+
+
     }
 }

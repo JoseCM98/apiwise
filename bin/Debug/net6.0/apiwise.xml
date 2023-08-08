@@ -31,6 +31,18 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="T:apiwise.Controllers.PagosController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:apiwise.Controllers.PagosController.#ctor(apiwise.Data.DataContext,AutoMapper.IMapper,apiwise.Interface.ILoggerWise,apiwise.Data.DataContextProcedures)">
+            <summary>
+            </summary>
+            <param name="dataContext"></param>
+            <param name="mapper"></param>
+            <param name="logger"></param>
+            <param name="ctxProcedure"></param>
+        </member>
         <member name="M:apiwise.Controllers.PagosController.PostPaymentsEasyAsync(apiwise.Models.Pagos.PagosDto.Payment)">
             <summary>
             Registrar pagos clientes
@@ -278,6 +290,11 @@
             </summary>
             <param name="modelBuilder"></param>
         </member>
+        <member name="M:apiwise.Data.DataContextProcedures.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
         <member name="T:apiwise.Enum.ProductosEnum">
             <summary>
             </summary>
@@ -389,6 +406,32 @@
             <summary>
             </summary>
         </member>
+        <member name="T:apiwise.HostedService.MyHostedService">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:apiwise.HostedService.MyHostedService.#ctor(System.IServiceProvider)">
+            <summary>
+            </summary>
+            <param name="serviceProvider"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:apiwise.HostedService.MyHostedService.StartAsync(System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiwise.HostedService.MyHostedService.StopAsync(System.Threading.CancellationToken)">
+            <summary>
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:apiwise.HostedService.MyHostedService.Dispose">
+            <summary>
+            </summary>
+        </member>
         <member name="T:apiwise.Mapper.AutomapperProfiles">
             <summary>
             
@@ -458,6 +501,10 @@
             </summary>
         </member>
         <member name="T:apiwise.Models.Empresasproducto">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.Itemsfvfranquiciadosamatriz">
             <summary>
             </summary>
         </member>
