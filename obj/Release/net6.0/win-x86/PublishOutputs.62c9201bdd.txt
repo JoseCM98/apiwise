@@ -1,0 +1,5 @@
+C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\win-x86\PubTmp\Out\appsettings.Development.json
+C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\win-x86\PubTmp\Out\appsettings.json
+C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\win-x86\PubTmp\Out\apiwise.pdb
+C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\win-x86\PubTmp\Out\apiwise.xml
+C:\inetpub\wwwroot\apiwise\obj\Release\net6.0\win-x86\PubTmp\Out\apiwise.exe

@@ -7,6 +7,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace apiwise.Controllers
 {
+    /// <summary>
+    /// </summary>
     [Route("api/")]
     [ApiController]
     public class ReportController : ControllerBase
@@ -15,6 +17,12 @@ namespace apiwise.Controllers
         public readonly IMapper _mapper;
         public readonly ILoggerWise _logger;
         private readonly DataContextProcedures _ctxProcedure;
+        /// <summary>
+        /// </summary>
+        /// <param name="dataContext"></param>
+        /// <param name="mapper"></param>
+        /// <param name="logger"></param>
+        /// <param name="ctxProcedure"></param>
         public ReportController(DataContext dataContext, IMapper mapper, ILoggerWise logger, DataContextProcedures ctxProcedure)
         {
             _logger = logger;
@@ -22,6 +30,10 @@ namespace apiwise.Controllers
             _mapper = mapper;
             _ctxProcedure = ctxProcedure;
         }
+        /// <summary>
+        /// </summary>
+        /// <param name="DateInfo"></param>
+        /// <returns></returns>
         [HttpPost("itemsfv")]
         public async Task<ActionResult> GetResultItemsFv([FromBody] string DateInfo)
         {

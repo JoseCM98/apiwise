@@ -4,6 +4,10 @@
         <name>apiwise</name>
     </assembly>
     <members>
+        <member name="T:apiwise.Controllers.ContratosController">
+            <summary>
+            </summary>
+        </member>
         <member name="M:apiwise.Controllers.ContratosController.GetResultContratoCliente(System.String)">
             <summary>
             </summary>= "0101804086001"
@@ -78,6 +82,24 @@
         <member name="M:apiwise.Controllers.ProductosController.GetProducto(apiwise.Models.CProducto.FromBodyItems)">
             <summary>
             </summary>
+            <returns></returns>
+        </member>
+        <member name="T:apiwise.Controllers.ReportController">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:apiwise.Controllers.ReportController.#ctor(apiwise.Data.DataContext,AutoMapper.IMapper,apiwise.Interface.ILoggerWise,apiwise.Data.DataContextProcedures)">
+            <summary>
+            </summary>
+            <param name="dataContext"></param>
+            <param name="mapper"></param>
+            <param name="logger"></param>
+            <param name="ctxProcedure"></param>
+        </member>
+        <member name="M:apiwise.Controllers.ReportController.GetResultItemsFv(System.String)">
+            <summary>
+            </summary>
+            <param name="DateInfo"></param>
             <returns></returns>
         </member>
         <member name="T:apiwise.Controllers.SeriesLotesProductController">

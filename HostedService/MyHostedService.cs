@@ -32,7 +32,7 @@ namespace apiwise.HostedService
             DateTime now = DateTime.Now;
             //_logger.LogHosted($"HOSTED START:{now}");
             // Iniciar la tarea programada cuando la aplicación se inicie
-            _timer = new Timer(callback: DoWork, null, TimeSpan.Zero, TimeSpan.FromHours(1));
+            _timer = new Timer(callback: DoWork, null, TimeSpan.Zero, TimeSpan.FromMinutes(1));
             return Task.CompletedTask;
         }
         private async void DoWork(object state)
@@ -44,14 +44,14 @@ namespace apiwise.HostedService
             var currentTime = DateTime.Now.TimeOfDay;
             logger.LogHosted($"HOSTED INICIADO EJECUTAR:{currentTime}");
             // Verificar si estamos dentro del rango de 5 minutos específico
-            if (currentTime >= TimeSpan.FromMinutes(30) && currentTime < TimeSpan.FromMinutes(32))
-            {
+           // if (currentTime >= TimeSpan.FromMinutes(30) && currentTime < TimeSpan.FromMinutes(32))
+           // {
                 // Coloca aquí la lógica de la tarea que deseas ejecutar
                 var parameter1 = Guid.NewGuid(); // Ejemplo de valor para el primer parámetro
                 var parameter2 = DateTime.Now;   // Ejemplo de valor para el segundo parámetro
                 var esultado = await dbContext.Database.ExecuteSqlRawAsync("CALL GRabarPruebaserviciobacgrao({0}, {1})", parameter1, parameter2);
                 logger.LogHosted($"HOSTED FINALIZA EJECUTAR:{esultado}");
-            }
+           // }
         }
         /// <summary>
         /// </summary>

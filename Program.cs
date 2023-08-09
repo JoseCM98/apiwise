@@ -55,9 +55,10 @@ builder.Services.AddDbContext<DataContextProcedures>(
     });
 builder.Services.AddMvc(option => option.EnableEndpointRouting = false).AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
 var appSettingsSection = builder.Configuration.GetSection(nameof(AppSettings));
+
 builder.Services.Configure<AppSettings>(appSettingsSection);
 var appSetting = appSettingsSection.Get<AppSettings>();
-var key = Encoding.ASCII.GetBytes(appSetting.JwtSettings.secret);
+//var key = Encoding.ASCII.GetBytes(appSetting.JwtSettings.secret);
 // dentro de esta sección estamos configurando la autenticación y estableciendo el esquema predeterminado
 builder.Services.AddAuthentication(opt =>
 {
@@ -71,7 +72,7 @@ builder.Services.AddAuthentication(opt =>
      opt.TokenValidationParameters = new TokenValidationParameters
      {
          ValidateIssuerSigningKey = true,
-         IssuerSigningKey = new SymmetricSecurityKey(key),
+         IssuerSigningKey = new SymmetricSecurityKey(null),
          ValidateIssuer = false,
          ValidateAudience = false,
          ValidateLifetime = true,

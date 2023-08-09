@@ -7,6 +7,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace apiwise.Controllers
 {
+    /// <summary>
+    /// </summary>
     [Route("api/")]
     [ApiController]
     public class ContratosController : ControllerBase
