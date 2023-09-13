@@ -32,23 +32,24 @@ namespace apiwise.Controllers
         }
         /// <summary>
         /// </summary>
-        /// <param name="DateInfo"></param>
+        /// <param name="param"></param>
         /// <returns></returns>
         [HttpPost("itemsfv")]
-        public async Task<ActionResult> GetResultItemsFv([FromBody] string DateInfo)
+        public async Task<ActionResult> GetResultItemsFv([FromBody] FromBodyItemFvReport param)
         {
             try
             {
-                if (DateInfo == null)
+                if (param == null)
                 {
                     var MsjReuest = "ERROR: Con los parametros enviados.";
                     return BadRequest(new { Success = false, Message = MsjReuest });
                 }
                 else
                 {
-                    List<Itemsfvfranquiciadosamatriz> ItemsFv = await _ctxProcedure.Itemsfvfranquiciadosamatrizs.FromSqlRaw($"CALL GenerarReporteItemsFacturadasFranquiciasParaMatriz('{DateInfo}')").ToListAsync();
+                    List<Itemsfvfranquiciadosamatriz> ItemsFv = await _ctxProcedure.Itemsfvfranquiciadosamatrizs.FromSqlRaw($"CALL GenerarReporteItemsFacturadasFranquiciasParaMatriz('{param.fecha}')").ToListAsync();
                     if (ItemsFv.Count > 0)
                     {
+                        _logger.LogInformation($"GetResultItemsFv:{ItemsFv}");
                         return Ok(new { Success = true, Message = "OK", ResponsesObject = ItemsFv });
                     }
                     else
@@ -61,7 +62,7 @@ namespace apiwise.Controllers
             catch (Exception ex)
             {
                 string mensaje = $"{ex.Message}:{(ex.InnerException != null ? ex.InnerException.Message : "")}";
-                _logger.LogError($"ERROR: Slctdreposicionitem {mensaje}");
+                _logger.LogError($"ERROR: GetResultItemsFv:{mensaje}");
                 return BadRequest(new { Success = false, Message = mensaje });
             }
 

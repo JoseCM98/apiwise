@@ -106,7 +106,6 @@ namespace apiwise.Data
                 entity.Property(e => e.Fecharegistro);
                 entity.Property(e => e.UsuariosSerieProducto);
             });
-
             modelBuilder.Entity<Itemsfvfranquiciadosamatriz>(entity =>
             {
                 entity.HasNoKey();

@@ -10,7 +10,6 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using System.Reflection;
-using System.Text;
 
 var MyCors = "MyCors";
 var VersionApi = "v2_2";

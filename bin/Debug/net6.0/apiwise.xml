@@ -96,10 +96,10 @@
             <param name="logger"></param>
             <param name="ctxProcedure"></param>
         </member>
-        <member name="M:apiwise.Controllers.ReportController.GetResultItemsFv(System.String)">
+        <member name="M:apiwise.Controllers.ReportController.GetResultItemsFv(apiwise.Models.FromBodyItemFvReport)">
             <summary>
             </summary>
-            <param name="DateInfo"></param>
+            <param name="param"></param>
             <returns></returns>
         </member>
         <member name="T:apiwise.Controllers.SeriesLotesProductController">
@@ -523,6 +523,22 @@
             </summary>
         </member>
         <member name="T:apiwise.Models.Empresasproducto">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:apiwise.Models.FromBodyItemFvReport">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.FromBodyItemFvReport.rucempresa">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.FromBodyItemFvReport.fecha">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:apiwise.Models.FromBodyItemFvReport.data">
             <summary>
             </summary>
         </member>

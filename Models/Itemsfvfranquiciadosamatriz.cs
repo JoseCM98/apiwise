@@ -13,7 +13,7 @@
         public string Descripcion { get; set; } = null!;
         public decimal Cantidad { get; set; }
         public decimal Precio { get; set; }
-        public string Fechafv { get; set; } = null!;
+        public DateTime Fechafv { get; set; }
         public int Estado { get; set; }
     }
 }

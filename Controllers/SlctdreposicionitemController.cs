@@ -282,7 +282,7 @@ namespace apiwise.Controllers
             }
             catch (Exception ex)
             {
-                string mensaje = $"ERROR:{ex.Message} {(ex.InnerException != null ? ex.InnerException.Message : "")}";
+                string mensaje = ex.Message + ": " + (ex.InnerException != null ? ex.InnerException.Message : "");
                 _logger.LogError($"ERROR:Slctdreposicionitem RetornoPut {mensaje}:{idDocumento}:{JsonConvert.SerializeObject(slctdreposicionitem)}");
                 return BadRequest(new { Success = false, Message = mensaje });
             }
