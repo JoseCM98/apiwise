@@ -8,21 +8,21 @@ namespace apiwise.Service
     {
         public void LogError(string mensaje)
         {
-            EscribirText(mensaje, TypeEnum.Error.ToString(), "Logs\\Error");
+            EscribirText(mensaje, TypeEnum.Error.ToString(), "Logs//Error");
         }
 
         public void LogInformation(string mensaje)
         {
-            EscribirText(mensaje, TypeEnum.Infor.ToString(), "Logs\\Info");
+            EscribirText(mensaje, TypeEnum.Infor.ToString(), "Logs//Info");
         }
 
         public void LogWarning(string mensaje)
         {
-            EscribirText(mensaje, TypeEnum.Warng.ToString(), "Logs\\Info");
+            EscribirText(mensaje, TypeEnum.Warng.ToString(), "Logs//Info");
         }
         public void LogHosted(string mensaje)
         {
-            EscribirText(mensaje, TypeEnum.Warng.ToString(), "Logs\\Hosted");
+            EscribirText(mensaje, TypeEnum.Warng.ToString(), "Logs//Hosted");
         }
         public void EscribirText(string msn, string tipo, string carpeta)
         {
